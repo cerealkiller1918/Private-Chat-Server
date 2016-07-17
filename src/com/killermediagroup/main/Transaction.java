@@ -16,9 +16,6 @@ public class Transaction extends Thread {
 		try {
 			inputStream = socket.getInputStream();
 			outputStream = socket.getOutputStream();
-			String test = "this is a test\n";
-			outputStream.flush();
-			outputStream.write(test.getBytes());
 			outputStream.flush();
 			
 		} catch (IOException e) {
